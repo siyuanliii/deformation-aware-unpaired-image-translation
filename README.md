@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ```
 
 ### Dataset preparation
-For animal dataset, you can download from [here](https://drive.google.com/drive/folders/16A0aPG7takJRat5866sojS1s548gTdmN?usp=sharing)
+For animal dataset, you can download from [here](https://drive.google.com/drive/folders/16A0aPG7takJRat5866sojS1s548gTdmN?usp=sharing).
 Note that for real images we can only provide drosophila images for now. For C.elegans and Zebra fish, we haven't gotten permission to release yet. We will release them once we get permission. If you need those data, you can find the sources from our paper.
 
 Put the download models in folder
