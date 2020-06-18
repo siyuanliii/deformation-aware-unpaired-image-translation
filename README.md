@@ -3,7 +3,6 @@
 Siyuan Li, Semih Günel, Mirela Ostrek, Pavan Ramdya, Pascal Fua, Helge Rhodin. In CVPR 2020.
 
 <img src="./imgs/teaser.gif" width="900">
-<img src="./imgs/pose_estimation.gif" width="900">
 We propose a method to transfer synthetic images and their keypoint annotations to realistically looking images using
 only unpaired examples of the two domains. Our method enables training of a pose detector that can be applied to real
 images for neuroscientific studies.
@@ -62,6 +61,8 @@ python test.py --dataroot ./dataset/unpaired_dataset/fish/ --name fish --model d
 ```
 
 ### Pose estimation
+
+<img src="./imgs/pose_estimation.gif" width="700">
 Pose estimation model is a standard stacked hourglass network describe in the [paper](https://arxiv.org/abs/1603.06937). You can also use other pose estimation models.
 Previous step generate both realistic images and annotations. Then, we can use the generated data to train a pose estimation network. You can download our [pretrained models](https://drive.google.com/drive/folders/1S7dDPHPej5HlP_VniIEu771oX3CWbZvc?usp=sharing) and test as following.  
 
