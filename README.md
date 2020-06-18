@@ -8,7 +8,7 @@ only unpaired examples of the two domains. Our method enables training of a pose
 images for neuroscientific studies.
 
 
-## Getting Started
+## Getting started
 These instructions will get you a copy of the project up and running on your local machine.
 
 ### Clone the repo and install dependencies:
@@ -21,7 +21,7 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-### Dataset Preparation
+### Dataset preparation
 For animal dataset, you can download from [here](https://drive.google.com/drive/folders/16A0aPG7takJRat5866sojS1s548gTdmN?usp=sharing)
 Note that for real images we can only provide drosophila images for now. For C.elegans and Zebra fish, we haven't gotten permission to release yet. We will release them once we get permission. If you need those data, you can find the sources from our paper.
 
@@ -30,7 +30,7 @@ Put the download models in folder
 ./dataset
 ```
 
-### Pretrained Models
+### Pretrained models
 Download pretrained models [here](https://drive.google.com/drive/folders/1S7dDPHPej5HlP_VniIEu771oX3CWbZvc?usp=sharing) and put the download models in following folder
 ```
 ./saved_models
@@ -62,7 +62,7 @@ python test.py --dataroot ./dataset/unpaired_dataset/fish/ --name fish --model d
 
 ### Pose estimation
 Pose estimation model is a standard stacked hourglass network describe in the [paper](https://arxiv.org/abs/1603.06937). 
-Previous step generate both realistic images and annotations. Then, we can use the generated data to train a pose estimation network. You can download our [pretrain models]() and test as following.  
+Previous step generate both realistic images and annotations. Then, we can use the generated data to train a pose estimation network. You can download our [pretrained models](https://drive.google.com/drive/folders/1S7dDPHPej5HlP_VniIEu771oX3CWbZvc?usp=sharing) and test as following.  
 
 * Drosophila
 ```
@@ -85,7 +85,7 @@ python test.py --dataroot ./dataset/test/fish/  --name fish --model pose --gpu_i
 python -m visdom.server
 ```
 
-### Initial Phase
+### Initial phase
 To make the training easier, we need to initlize the deformation grid to identity mapping.
 You can either train it or download our pretained init model [here]()
 
