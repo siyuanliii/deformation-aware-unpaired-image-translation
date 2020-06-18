@@ -2,7 +2,8 @@
 #### [Video](https://www.youtube.com/watch?v=bVhdF_JJLZ0) | [Paper](http://openaccess.thecvf.com/content_CVPR_2020/papers/Li_Deformation-Aware_Unpaired_Image_Translation_for_Pose_Estimation_on_Laboratory_Animals_CVPR_2020_paper.pdf) |[Poster](./imgs/Deformation_aware_CVPR2020_poster.pdf)
 Siyuan Li, Semih Günel, Mirela Ostrek, Pavan Ramdya, Pascal Fua, Helge Rhodin. In CVPR 2020.
 
-<img src="./imgs/teaser.gif" width="900">
+<img src="./imgs/teaser.gif" width="700">
+<img src="./imgs/human.jpg" width="700">
 We propose a method to transfer synthetic images and their keypoint annotations to realistically looking images using
 only unpaired examples of the two domains. Our method enables training of a pose detector that can be applied to real
 images for neuroscientific studies.
