@@ -45,16 +45,7 @@ def get_norm_layer(norm_type='instance'):
 
 def get_scheduler(optimizer, opt, Isdeform = False):
     if opt.lr_policy == 'lambda':
-        
-#         if Isdeform:
-#             def lambda_rule(epoch):
-# #                 lr_l = 1.0 - max(0, epoch + 1 + opt.epoch_count - opt.niter) / float(opt.niter_decay + 1)
-#                 if epoch > 20:
-#                     lr_l = (1/2) ** (epoch - 20)
-#                 else:
-#                     lr_l = 1
-#                 return lr_l
-#         else:
+
         def lambda_rule(epoch):
             lr_l = 1.0 - max(0, epoch + 1 + opt.epoch_count - opt.niter) / float(opt.niter_decay + 1)
             return lr_l
@@ -255,28 +246,6 @@ class RegLoss(nn.Module):
         loss = self.loss_TV + self.loss_bias + self.loss_affine
         return loss    
 
-    
-# class TotalVaryLoss(nn.Module):
-    
-#     def __init__(self):
-#         super(TotalVaryLoss, self).__init__()
-        
-#     def forward(self, x, weight=1):
-#         self.loss = weight * (torch.sum(torch.abs(x[:, :, :, :-1] - x[:, :, :, 1:])) + 
-#             torch.sum(torch.abs(x[:, :, :-1, :] - x[:, :, 1:, :])))
-        
-#         return self.loss
-    
-# class BiasReduceLoss(nn.Module):
-    
-#     def __init__(self):
-#         super(BiasReduceLoss, self).__init__()
-#         self.criterion = nn.MSELoss()
-        
-#     def forward(self, x, y, weight=1):
-#         self.avg = torch.mean(x,0).unsqueeze(0)
-#         self.loss = weight*self.criterion(self.avg, y)
-#         return self.loss
     
     
 class GP(nn.Module):
