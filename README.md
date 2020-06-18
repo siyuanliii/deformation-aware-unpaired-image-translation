@@ -3,6 +3,7 @@
 Siyuan Li, Semih Günel, Mirela Ostrek, Pavan Ramdya, Pascal Fua, Helge Rhodin. In CVPR 2020.
 
 <img src="./imgs/teaser.gif" width="900">
+<img src="./imgs/pose_estimation.gif" width="900">
 We propose a method to transfer synthetic images and their keypoint annotations to realistically looking images using
 only unpaired examples of the two domains. Our method enables training of a pose detector that can be applied to real
 images for neuroscientific studies.
