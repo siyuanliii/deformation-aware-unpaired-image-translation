@@ -2,7 +2,7 @@
 #### [Video](https://www.youtube.com/watch?v=bVhdF_JJLZ0) | [Paper](http://openaccess.thecvf.com/content_CVPR_2020/papers/Li_Deformation-Aware_Unpaired_Image_Translation_for_Pose_Estimation_on_Laboratory_Animals_CVPR_2020_paper.pdf) |[Poster](./Deformation_aware_CVPR2020_poster.pdf)
 Siyuan Li, Semih Günel, Mirela Ostrek, Pavan Ramdya, Pascal Fua, Helge Rhodin. In CVPR 2020.
 
-<img src="./teaser.gif" width="900">
+<img src="./imgs/teaser.gif" width="900">
 We propose a method to transfer synthetic images and their keypoint annotations to realistically looking images using
 only unpaired examples of the two domains. Our method enables training of a pose detector that can be applied to real
 images for neuroscientific studies.
@@ -14,7 +14,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Clone the repo and install dependencies:
 Clone this repo:
 ```
-git clone https://github.com/siyliepfl/deformation-aware-image-translation.git
+git clone https://github.com/siyliepfl/deformation-aware-unpaired-image-translation.git
 ```
 Install dependencies:
 ```
@@ -141,8 +141,8 @@ After data preparation, you can train your own model following the instruction a
 
 Some examples on custom dataset
 
-<img src="./review_mammals.jpg" width="1000">
-<img src="./camel2giraffe.png" width="900">
+<img src="./imgs/review_mammals.jpg" width="1000">
+<img src="./imgs/camel2giraffe.png" width="900">
 
 ## The code structure
 
