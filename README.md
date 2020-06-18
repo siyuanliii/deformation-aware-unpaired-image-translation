@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 ### Dataset preparation
 For animal dataset, you can download from [here](https://drive.google.com/drive/folders/16A0aPG7takJRat5866sojS1s548gTdmN?usp=sharing).
-Note that for real images we can only provide drosophila images for now. For C.elegans and Zebra fish, we haven't gotten permission to release yet. We will release them once we get permission. If you need those data, you can find the sources from our paper.
+Note that for real images we can only provide drosophila images for now. For C.elegans and Zebra fish, we don't own the data. If you need those data, you can find the sources from our paper.
 
 Put the download models in folder
 ```
@@ -61,7 +61,7 @@ python test.py --dataroot ./dataset/unpaired_dataset/fish/ --name fish --model d
 ```
 
 ### Pose estimation
-Pose estimation model is a standard stacked hourglass network describe in the [paper](https://arxiv.org/abs/1603.06937). 
+Pose estimation model is a standard stacked hourglass network describe in the [paper](https://arxiv.org/abs/1603.06937). You can also use other pose estimation models.
 Previous step generate both realistic images and annotations. Then, we can use the generated data to train a pose estimation network. You can download our [pretrained models](https://drive.google.com/drive/folders/1S7dDPHPej5HlP_VniIEu771oX3CWbZvc?usp=sharing) and test as following.  
 
 * Drosophila
