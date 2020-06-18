@@ -142,10 +142,7 @@ And one annotation file for keypoints: syn_anno.pth
 The keypoints annotation should be saved in a python dictionary and the key is the name of each image in trainA and the value is a 2D numpy array ([[x,y],[x,y]...]). The coordinates should be mapped to [0, 1].
 After data preparation, you can train your own model following the instruction above.
 
-Some examples on custom dataset
 
-<img src="./imgs/review_mammals.jpg" width="1000">
-<img src="./imgs/camel2giraffe.png" width="900">
 
 ## The code structure
 
