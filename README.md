@@ -1,5 +1,5 @@
 # Deformation-aware Unpaired Image Translation for Pose Estimation on Laboratory Animals
-#### [Video](https://www.youtube.com/watch?v=bVhdF_JJLZ0) | [Paper](http://openaccess.thecvf.com/content_CVPR_2020/papers/Li_Deformation-Aware_Unpaired_Image_Translation_for_Pose_Estimation_on_Laboratory_Animals_CVPR_2020_paper.pdf) |[Poster](./imgs/Deformation_aware_CVPR2020_poster.pdf)
+#### [Video](https://www.youtube.com/watch?v=bVhdF_JJLZ0) | [Paper](http://openaccess.thecvf.com/content_CVPR_2020/papers/Li_Deformation-Aware_Unpaired_Image_Translation_for_Pose_Estimation_on_Laboratory_Animals_CVPR_2020_paper.pdf) | [Poster](./imgs/Deformation_aware_CVPR2020_poster.pdf)
 Siyuan Li, Semih Günel, Mirela Ostrek, Pavan Ramdya, Pascal Fua, Helge Rhodin. In CVPR 2020.
 
 <img src="./imgs/teaser.gif" width="700">
@@ -23,8 +23,8 @@ pip install -r requirements.txt
 ```
 
 ### Dataset preparation
-For animal dataset, you can download from [here](https://drive.google.com/drive/folders/16A0aPG7takJRat5866sojS1s548gTdmN?usp=sharing).
-Note that for real images we can only provide drosophila images for now. For C.elegans and Zebra fish, we don't own the data. If you need those data, you can find the sources from our paper.
+You can download animal datasets from [here](https://drive.google.com/drive/folders/16A0aPG7takJRat5866sojS1s548gTdmN?usp=sharing).
+Note that for real images we can only provide drosophila dataset for now. For C. elegans and Zebra fish, we don't own the data. If you need those data, you can find the sources from our paper.
 
 Put the download models in folder
 ```
@@ -42,7 +42,7 @@ Download pretrained models [here](https://drive.google.com/drive/folders/1S7dDPH
 You can download the pretrained model and test as following. If you want to train the model by yourself, please follow the steps in next sections.
 
 ### Unpaired image translation and annotation transfer
-The main part of our model is to transfer the images and annotations cross domain. 
+The main part of our model is to transfer the images and annotations across domains. 
 This model can transfer the synthetic images to real and also generate annotations which can be used for training a pose estimation network. You can run following commands and check generate images and annotations in result dir.
 
 * Drosophila
@@ -64,7 +64,7 @@ python test.py --dataroot ./dataset/unpaired_dataset/fish/ --name fish --model d
 ### Pose estimation
 
 <img src="./imgs/pose_estimation.gif" width="500">
-Pose estimation model is a standard stacked hourglass network describe in the [paper](https://arxiv.org/abs/1603.06937). You can also use other pose estimation models.
+Pose estimation model is a standard stacked hourglass network described in the [paper](https://arxiv.org/abs/1603.06937). You can also use other pose estimation models.
 Previous step generate both realistic images and annotations. Then, we can use the generated data to train a pose estimation network. You can download our [pretrained models](https://drive.google.com/drive/folders/1S7dDPHPej5HlP_VniIEu771oX3CWbZvc?usp=sharing) and test as following.  
 
 * Drosophila
@@ -152,7 +152,7 @@ The structure of the code is based on pytorch-CycleGAN-and-pix2pix. Please refer
 ```
 @inproceedings{li2020deformation,
   title={Deformation-aware Unpaired Image Translation for Pose Estimation on Laboratory Animals},
-  author={Li, Siyuan and Gunel, Semih and Ostrek, Mirela and Ramdya, Pavan and Fua, Pascal and Rhodin, Helge},
+  author={Li, Siyuan and G\"unel, Semih and Ostrek, Mirela and Ramdya, Pavan and Fua, Pascal and Rhodin, Helge},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   pages={13158--13168},
   year={2020}
