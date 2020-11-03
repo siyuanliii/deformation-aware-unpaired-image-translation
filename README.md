@@ -90,7 +90,7 @@ python -m visdom.server
 
 ### Initial phase
 To make the training easier, we need to initlize the deformation grid to identity mapping.
-You can either train it or download our pretained init model [here]()
+You can either train it or download our pretained init model [here](https://drive.google.com/drive/folders/1S7dDPHPej5HlP_VniIEu771oX3CWbZvc?usp=sharing)
 
 You can also train it by running:
 ```
