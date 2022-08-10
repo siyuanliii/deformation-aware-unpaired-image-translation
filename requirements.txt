@@ -9,7 +9,7 @@ h5py==2.9.0
 html5lib==1.0.1
 matplotlib==3.1.1
 mistune==0.8.4
-nbconvert==5.5.0
+nbconvert==6.3.0
 nbformat==4.4.0
 networkx==2.3
 ninja==1.9.0.post1
